@@ -25,11 +25,12 @@ function draw(){
     circle.display();
     connection.display();
 
-    if(mouseDown("space")){
+    if(keyDown("space")){
         console.log("true");
-        circle.x = mouseX;
-        circle.y = mouseY;
+        circle.body.position.x = mouseX;
+        circle.body.position.y = mouseY;
     } 
+    text("ENJOY THE PENDULUM WITH AN ELASTIC STRING",100,200);
 
 
 
